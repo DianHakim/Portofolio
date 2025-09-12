@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Hi, I’m Dian Hakim, and this is my journey as a developer.">
+  <meta name="description" content="Start your development with Meyawo landing page.">
   <meta name="author" content="Devcrud">
   <title>Portofolio Dian Hakim</title>
 
@@ -38,6 +38,13 @@
   animation: zoomIn 0.3s ease;
 }
 
+.portfolio-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 @keyframes zoomIn {
   from { transform: scale(0.5); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
@@ -62,7 +69,10 @@
   color: red;
 }
 
-/* Tambahan spacing untuk sertifikat baris kedua */
+#portfolio .row {
+  row-gap: 30px;
+}
+
 #sertifikat .row .col-md-4:nth-child(n+4) {
   margin-top: 30px;
 }
@@ -88,7 +98,7 @@
       <ul class="nav">
         <li class="item"><a class="link" href="#home">Home</a></li>
         <li class="item"><a class="link" href="#about">About</a></li>
-        <li class="item"><a class="link" href="#portfolio">Portfolio</a></li>
+        <li class="item"><a class="link" href="#portfolio">Project</a></li>
         <li class="item"><a class="link" href="#sertifikat">Certificate</a></li>
         <li class="item"><a class="link" href="#contact">Contact</a></li>
       </ul>
@@ -123,9 +133,9 @@
   <!-- Portfolio -->
 <section class="section" id="portfolio">
   <div class="container text-center">
-    <h6 class="section-title mb-6">Portfolio</h6>
-    <div class="row">
-      <div class="col-md-4">
+    <h6 class="section-title mb-6">Project</h6>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
         <a href="#" class="portfolio-card">
           <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/mitapp.png" class="portfolio-card-img clickable-img">
           <span class="portfolio-card-overlay">
@@ -136,24 +146,79 @@
           </span>
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3 col-sm-6">
         <a href="#" class="portfolio-card">
-          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/codinganiot.jpg" class="portfolio-card-img clickable-img">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/pjiot.jpg" class="portfolio-card-img clickable-img">
           <span class="portfolio-card-overlay">
             <span class="portfolio-card-caption">
-              <h4>Codingan IoT</h4>
-              <p class="font-weight-normal">Membuat lampu tepuk on/off</p>
+              <h4>Implementasi IoT pada Sistem Lampu Tepuk</h4>
+              <p class="font-weight-normal">Membuat sebuah lampu tepuk on/off</p>
             </span>
           </span>
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3 col-sm-6">
         <a href="#" class="portfolio-card">
           <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/unimedia.png" class="portfolio-card-img clickable-img">
           <span class="portfolio-card-overlay">
             <span class="portfolio-card-caption">
               <h4>Uni-Media</h4>
               <p class="font-weight-normal">Website posting foto/video</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="#" class="portfolio-card">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/greenwiyata.jpg" class="portfolio-card-img clickable-img">
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Green Wiyata</h4>
+              <p class="font-weight-normal">Website posting foto tanaman dan melihat lokasi tanaman serta sharing jenis tanaman</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="https://games-mtk.vercel.app/" class="portfolio-card">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/games-mtk.png" class="portfolio-card-img clickable-img">
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Games-matematika</h4>
+              <p class="font-weight-normal">Membuat website games matematika</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="https://sahabatad.blogspot.com/" class="portfolio-card">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/blogspotkartini.png" class="portfolio-card-img clickable-img">
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Blogspot Ibu Kartini</h4>
+              <p class="font-weight-normal">Membuat blog spot tentang Ibu Kartini</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="https://pomodoro-iota-inky.vercel.app/" class="portfolio-card">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/pomodoro.png" class="portfolio-card-img clickable-img">
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Pomodoro Timer</h4>
+              <p class="font-weight-normal">Membuat website Pomodoro Timer</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="https://website-kemerdekaan.vercel.app/" class="portfolio-card">
+          <img src="portofolio Dian/Portofoliosaya/public_html/assets/imgs/kemerdekaan.png" class="portfolio-card-img clickable-img">
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Kemerdekaan</h4>
+              <p class="font-weight-normal">Membuat website ucapan kemerdekaan tahun 80</p>
             </span>
           </span>
         </a>
@@ -224,7 +289,6 @@
     </div>
   </div>
 </section>
-
 
   <!-- Contact -->
   <section class="section" id="contact">
@@ -298,5 +362,4 @@
     }
   </script>
 </body>
-
 </html>
